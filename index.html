@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rabi Irshad, Will You Be My Valentine? 💖</title>
+    <meta name="description" content="A special Valentine's Day message for Rabi Irshad — from Adnan." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        /* ===== CSS Reset & Base ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        /* ===== Romantic Gradient Background ===== */
+        body {
+            background: linear-gradient(135deg,
+                    #1a1a2e 0%, #16213e 25%, #0f3460 50%,
+                    #1a1a2e 75%, #16213e 100%);
+            background-size: 400% 400%;
+            animation: nightSky 20s ease infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        @keyframes nightSky {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* ===== Stars Background ===== */
+        .stars-container {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle ease-in-out infinite;
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.2;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+
+        /* ===== Floating Hearts / Petals ===== */
+        .particles-container {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .floating-particle {
+            position: absolute;
+            bottom: -40px;
+            opacity: 0.6;
+            animation: floatUp linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg) translateX(0);
+                opacity: 0.7;
+            }
+
+            25% {
+                transform: translateY(-28vh) rotate(90deg) translateX(25px);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(-55vh) rotate(180deg) translateX(-20px);
+            }
+
+            75% {
+                transform: translateY(-82vh) rotate(270deg) translateX(15px);
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg) translateX(0);
+                opacity: 0;
+            }
+        }
+
+        /* ===== Scene Container ===== */
+        .scene {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: opacity 0.8s ease, transform 0.8s ease;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .scene.hidden {
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(0.95);
+        }
+
+        /* ===== Glassmorphism Card ===== */
+        .glass-card {
+            text-align: center;
+            padding: 50px 44px;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 32px;
+            box-shadow:
+                0 8px 40px rgba(0, 0, 0, 0.3),
+                0 0 100px rgba(233, 69, 96, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            max-width: 520px;
+            width: 92%;
+            opacity: 0;
+            transform: translateY(30px) scale(0.96);
+            animation: fadeInCard 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+        }
+
+        @keyframes fadeInCard {
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* ===== Glow Rings ===== */
+        .glow-ring {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 1px solid rgba(233, 69, 96, 0.12);
+            box-shadow: 0 0 60px rgba(233, 69, 96, 0.05);
+            animation: ringPulse 4s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .glow-ring:nth-child(2) {
+            width: 420px;
+            height: 420px;
+            animation-delay: 1s;
+            border-color: rgba(233, 69, 96, 0.06);
+        }
+
+        @keyframes ringPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        /* ========================== */
+        /* SCENE 1: VALENTINE PROPOSAL */
+        /* ========================== */
+        .emoji-decor {
+            font-size: 72px;
+            margin-bottom: 16px;
+            display: block;
+            animation: gentlePulse 2.5s ease-in-out infinite;
+        }
+
+        @keyframes gentlePulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .glass-card h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2rem, 7vw, 3.4rem);
+            background: linear-gradient(135deg, #e94560, #f7a1b5, #e94560);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmerText 3s ease-in-out infinite;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        @keyframes shimmerText {
+            0% {
+                background-position: 0% center;
+            }
+
+            50% {
+                background-position: 200% center;
+            }
+
+            100% {
+                background-position: 0% center;
+            }
+        }
+
+        .glass-card .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 36px;
+            line-height: 1.5;
+        }
+
+        /* ===== Button Container ===== */
+        .buttons {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== YES Button ===== */
+        .btn-yes {
+            padding: 16px 48px;
+            font-size: 1.25rem;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow:
+                0 4px 24px rgba(233, 69, 96, 0.4),
+                0 0 50px rgba(233, 69, 96, 0.1);
+            transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-yes::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), transparent);
+            border-radius: 50px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-yes:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow:
+                0 8px 36px rgba(233, 69, 96, 0.5),
+                0 0 60px rgba(233, 69, 96, 0.2);
+        }
+
+        .btn-yes:hover::before {
+            opacity: 1;
+        }
+
+        .btn-yes:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        /* ===== NO Button ===== */
+        .btn-no {
+            padding: 16px 48px;
+            font-size: 1.25rem;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            color: #ff6b81;
+            background: rgba(20, 20, 40, 0.85);
+            border: 2px solid rgba(233, 69, 96, 0.3);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: left 0.35s cubic-bezier(0.22, 1, 0.36, 1), top 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            z-index: 9999;
+        }
+
+        .btn-no:hover {
+            background: rgba(30, 30, 60, 0.95);
+        }
+
+        /* In-flow: sits normally inside the card */
+        .btn-no.in-flow {
+            position: relative;
+        }
+
+        /* Dodging: fixed to viewport, floats above everything */
+        .btn-no.dodging {
+            position: fixed;
+        }
+
+        /* ========================== */
+        /* SCENE 2: THE LOVE LETTER   */
+        /* ========================== */
+        .letter-scene {
+            max-width: 580px;
+            width: 94%;
+        }
+
+        .letter-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28px;
+            padding: 40px 34px;
+            box-shadow:
+                0 12px 48px rgba(0, 0, 0, 0.35),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInCard 1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
+        }
+
+        .letter-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #e94560, #ff6b81, #e94560, transparent);
+        }
+
+        .letter-header {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1.5rem, 5vw, 2.2rem);
+            color: #ff6b81;
+            margin-bottom: 8px;
+        }
+
+        .letter-date {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .letter-body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: clamp(0.85rem, 2.2vw, 0.98rem);
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.85;
+            max-height: 42vh;
+            overflow-y: auto;
+            padding-right: 8px;
+        }
+
+        .letter-body::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .letter-body::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .letter-body::-webkit-scrollbar-thumb {
+            background: rgba(233, 69, 96, 0.3);
+            border-radius: 4px;
+        }
+
+        .letter-body p {
+            margin-bottom: 14px;
+        }
+
+        .letter-body .highlight {
+            color: #ff6b81;
+            font-weight: 500;
+        }
+
+        .letter-body .letter-signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            color: #e94560;
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .letter-actions {
+            display: flex;
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        .btn-action {
+            padding: 14px 40px;
+            font-size: 1.05rem;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 24px rgba(233, 69, 96, 0.35);
+            transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-action:hover {
+            transform: translateY(-3px) scale(1.04);
+            box-shadow:
+                0 8px 36px rgba(233, 69, 96, 0.5),
+                0 0 50px rgba(233, 69, 96, 0.12);
+        }
+
+        .btn-action:active {
+            transform: scale(0.97);
+        }
+
+        /* ========================== */
+        /* SCENE 3: THE PROMISE       */
+        /* ========================== */
+        .promise-card {
+            text-align: center;
+            padding: 50px 40px;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 32px;
+            box-shadow:
+                0 8px 48px rgba(0, 0, 0, 0.3),
+                0 0 100px rgba(233, 69, 96, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            max-width: 540px;
+            width: 92%;
+            animation: fadeInCard 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        .promise-emoji {
+            font-size: 80px;
+            display: block;
+            margin-bottom: 20px;
+            animation: gentlePulse 2s ease-in-out infinite;
+        }
+
+        .promise-card h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1.5rem, 6vw, 2.6rem);
+            color: #ff6b81;
+            margin-bottom: 16px;
+            line-height: 1.35;
+            animation: bounceIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3) rotate(-3deg);
+            }
+
+            60% {
+                opacity: 1;
+                transform: scale(1.08) rotate(1deg);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        .promise-card .promise-text {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: clamp(0.85rem, 2.2vw, 1rem);
+            color: rgba(255, 255, 255, 0.65);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .promise-card .promise-text strong {
+            color: #ff6b81;
+            font-weight: 500;
+        }
+
+        .promise-list {
+            list-style: none;
+            text-align: left;
+            max-width: 380px;
+            margin: 0 auto 28px;
+        }
+
+        .promise-list li {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: clamp(0.82rem, 2vw, 0.92rem);
+            color: rgba(255, 255, 255, 0.72);
+            padding: 9px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideInPromise 0.6s ease forwards;
+        }
+
+        .promise-list li:last-child {
+            border-bottom: none;
+        }
+
+        .promise-list li .promise-icon {
+            margin-right: 10px;
+            font-size: 1.1em;
+        }
+
+        @keyframes slideInPromise {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .forever-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            color: #e94560;
+            margin-top: 10px;
+            opacity: 0;
+            animation: fadeInCard 1s ease 2s forwards;
+        }
+
+        /* ===== Confetti ===== */
+        .confetti {
+            position: fixed;
+            top: -20px;
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            z-index: 1001;
+            animation: confettiFall linear forwards;
+        }
+
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* ===== Celebration Hearts ===== */
+        .celebration-heart {
+            position: fixed;
+            font-size: 30px;
+            z-index: 1001;
+            animation: celebHeartFloat ease-out forwards;
+            pointer-events: none;
+        }
+
+        @keyframes celebHeartFloat {
+            0% {
+                transform: translateY(0) scale(0);
+                opacity: 1;
+            }
+
+            30% {
+                transform: translateY(-15vh) scale(1.3);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-80vh) scale(0.6);
+                opacity: 0;
+            }
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 480px) {
+
+            .glass-card,
+            .letter-card,
+            .promise-card {
+                padding: 32px 22px;
+            }
+
+            .emoji-decor,
+            .promise-emoji {
+                font-size: 56px;
+            }
+
+            .buttons {
+                gap: 16px;
+            }
+
+            .btn-yes,
+            .btn-no {
+                padding: 14px 36px;
+                font-size: 1.1rem;
+            }
+
+            .letter-body {
+                max-height: 35vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== Stars Background ===== -->
+    <div class="stars-container" id="starsContainer"></div>
+
+    <!-- ===== Floating Hearts ===== -->
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <!-- ============================================ -->
+    <!-- SCENE 1: VALENTINE PROPOSAL (YES / NO)       -->
+    <!-- ============================================ -->
+    <div class="scene" id="scene1">
+        <div class="glow-ring"></div>
+        <div class="glow-ring"></div>
+        <div class="glass-card" id="proposalCard">
+            <span class="emoji-decor">🧸�</span>
+            <h1>Rabi Irshad,<br />Will You Be My Valentine? 💖</h1>
+            <p class="subtitle">I have something very important to ask you, Rabi... 💫</p>
+            <div class="buttons">
+                <button class="btn-yes" id="btnYes" onclick="sayYes()">YES 💘</button>
+                <button class="btn-no in-flow" id="btnNo">NO �</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SCENE 2: THE LOVE LETTER / APOLOGY           -->
+    <!-- ============================================ -->
+    <div class="scene hidden" id="scene2">
+        <div class="letter-scene">
+            <div class="letter-card">
+                <h2 class="letter-header">My Dearest Rabi Irshad,</h2>
+                <p class="letter-date">February 14, 2026 — Valentine's Day</p>
+                <div class="letter-body">
+                    <p>
+                        YAYYY! 🎉 You said YES! You just made me the happiest person alive!
+                        But before we celebrate, there's something I need to say to you —
+                        from the very bottom of my heart...
+                    </p>
+                    <p>
+                        <span class="highlight">I'm sorry, Rabi.</span> I truly, deeply am.
+                    </p>
+                    <p>
+                        You've told me that I don't give you enough time — and you're
+                        <span class="highlight">absolutely right</span>. I know I've been
+                        distant, busy, caught up in things that made me forget what truly
+                        matters the most — <span class="highlight">you</span>.
+                    </p>
+                    <p>
+                        Every moment I didn't spend with you was a moment wasted. Every time
+                        you felt alone because of me, it breaks my heart 💔. You didn't
+                        deserve that. You deserve someone who <span class="highlight">shows up</span>,
+                        who is <span class="highlight">present</span>, who makes you feel like
+                        you're the most important person in this world — because you ARE.
+                    </p>
+                    <p>
+                        I'm sorry for the late replies. I'm sorry for the cancelled plans.
+                        I'm sorry for every tear that fell because of me. I'm sorry for
+                        making you feel like you weren't a <span class="highlight">priority</span>.
+                    </p>
+                    <p>
+                        Rabi, you are not just someone in my life — you are my life. The way
+                        you smile, the way you care, the way you love me even when I don't
+                        deserve it... it makes me want to be <span class="highlight">better
+                            for you</span>. And that's exactly what I'm going to do.
+                    </p>
+                    <p>
+                        From this day forward, I promise to be the person you need me to be.
+                        Not perfect — but <span class="highlight">present</span>. Not flawless
+                        — but <span class="highlight">faithful</span>. Not distant — but
+                        <span class="highlight">devoted</span>.
+                    </p>
+                    <p>
+                        Please forgive me, Rabi. You are my heart, my peace, my everything. 🌹
+                    </p>
+                    <p class="letter-signature">
+                        Forever yours,<br />
+                        Adnan 💝
+                    </p>
+                </div>
+            </div>
+            <div class="letter-actions">
+                <button class="btn-action" id="btnForgive" onclick="showPromise()">
+                    I Forgive You, Adnan 💕
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SCENE 3: THE PROMISES                        -->
+    <!-- ============================================ -->
+    <div class="scene hidden" id="scene3">
+        <div class="promise-card">
+            <span class="promise-emoji">🥹💖</span>
+            <h1>Thank You, Rabi... 🥺<br />You Have the Most Beautiful Heart</h1>
+            <p class="promise-text">
+                I don't take this second chance for granted. Here are my
+                <strong>promises to you</strong> — from the bottom of my heart:
+            </p>
+            <ul class="promise-list" id="promiseList">
+                <li><span class="promise-icon">🕐</span> I will make time for you — always, no excuses</li>
+                <li><span class="promise-icon">📱</span> I will reply when you need me, not hours later</li>
+                <li><span class="promise-icon">🤗</span> I will be there — physically and emotionally</li>
+                <li><span class="promise-icon">🌙</span> I will never let you sleep sad because of me</li>
+                <li><span class="promise-icon">💐</span> I will surprise you, just because you deserve it</li>
+                <li><span class="promise-icon">❤️</span> I will love you louder — so you never have to doubt it</li>
+            </ul>
+            <p class="forever-text">
+                I love you, Rabi Irshad — today, tomorrow, and forever 💗
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // ===================================================================
+        // 1) TWINKLING STARS
+        // ===================================================================
+        (function createStars() {
+            const container = document.getElementById('starsContainer');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                const s = (1 + Math.random() * 3) + 'px';
+                star.style.width = s;
+                star.style.height = s;
+                star.style.animationDuration = (2 + Math.random() * 4) + 's';
+                star.style.animationDelay = Math.random() * 4 + 's';
+                container.appendChild(star);
+            }
+        })();
+
+        // ===================================================================
+        // 2) FLOATING HEARTS & PETALS
+        // ===================================================================
+        (function createParticles() {
+            const container = document.getElementById('particlesContainer');
+            const emojis = ['❤️', '💕', '💖', '💗', '💓', '💞', '🩷', '�', '🌸', '✨'];
+
+            function spawnParticle() {
+                const p = document.createElement('span');
+                p.classList.add('floating-particle');
+                p.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                p.style.left = Math.random() * 100 + '%';
+                p.style.fontSize = (14 + Math.random() * 20) + 'px';
+                const dur = 8 + Math.random() * 10;
+                p.style.animationDuration = dur + 's';
+                p.style.animationDelay = Math.random() * 2 + 's';
+                container.appendChild(p);
+                setTimeout(() => p.remove(), (dur + 2) * 1000);
+            }
+
+            setInterval(spawnParticle, 700);
+            for (let i = 0; i < 14; i++) setTimeout(spawnParticle, i * 180);
+        })();
+
+        // ===================================================================
+        // 3) DODGING "NO" BUTTON — smoothly runs AWAY from cursor
+        //    Button is moved to document.body on first dodge so it is
+        //    never clipped by any parent. Uses position:fixed.
+        // ===================================================================
+        (function setupNoButtonDodge() {
+            const btnNo = document.getElementById('btnNo');
+            const DODGE_DISTANCE = 140;
+            const DODGE_LEAP = 200; // how far it jumps away
+            let hasDodged = false;
+
+            function dodgeAwayFrom(cursorX, cursorY) {
+                const btnW = btnNo.offsetWidth;
+                const btnH = btnNo.offsetHeight;
+                const margin = 20;
+
+                // On first dodge: move button out of the card into body
+                // so it's never clipped by any parent overflow/transform
+                if (!hasDodged) {
+                    const startRect = btnNo.getBoundingClientRect();
+                    btnNo.classList.remove('in-flow');
+                    btnNo.classList.add('dodging');
+                    document.body.appendChild(btnNo);
+                    // Place it exactly where it was visually
+                    btnNo.style.left = startRect.left + 'px';
+                    btnNo.style.top = startRect.top + 'px';
+                    hasDodged = true;
+                    // Let the browser register the new position, then dodge
+                    requestAnimationFrame(() => performDodge(cursorX, cursorY, btnW, btnH, margin));
+                    return;
+                }
+
+                performDodge(cursorX, cursorY, btnW, btnH, margin);
+            }
+
+            function performDodge(cursorX, cursorY, btnW, btnH, margin) {
+                const rect = btnNo.getBoundingClientRect();
+                const btnCX = rect.left + rect.width / 2;
+                const btnCY = rect.top + rect.height / 2;
+
+                // Direction: button runs AWAY from cursor
+                let dx = btnCX - cursorX;
+                let dy = btnCY - cursorY;
+                const len = Math.sqrt(dx * dx + dy * dy) || 1;
+                dx /= len;
+                dy /= len;
+
+                // Add slight random angle so it doesn't just ping-pong
+                const angle = (Math.random() - 0.5) * 1.0;
+                const cos = Math.cos(angle), sin = Math.sin(angle);
+                const rdx = dx * cos - dy * sin;
+                const rdy = dx * sin + dy * cos;
+
+                // New center position
+                let newCX = btnCX + rdx * DODGE_LEAP;
+                let newCY = btnCY + rdy * DODGE_LEAP;
+
+                // Clamp within viewport
+                const maxX = window.innerWidth - btnW / 2 - margin;
+                const maxY = window.innerHeight - btnH / 2 - margin;
+                const minX = btnW / 2 + margin;
+                const minY = btnH / 2 + margin;
+
+                newCX = Math.max(minX, Math.min(maxX, newCX));
+                newCY = Math.max(minY, Math.min(maxY, newCY));
+
+                // If cornered (still too close to cursor), jump to opposite side
+                const distAfter = Math.sqrt(Math.pow(newCX - cursorX, 2) + Math.pow(newCY - cursorY, 2));
+                if (distAfter < DODGE_DISTANCE) {
+                    newCX = window.innerWidth - newCX;
+                    newCY = window.innerHeight - newCY;
+                    newCX = Math.max(minX, Math.min(maxX, newCX));
+                    newCY = Math.max(minY, Math.min(maxY, newCY));
+                }
+
+                // Set position (top-left from center)
+                btnNo.style.left = (newCX - btnW / 2) + 'px';
+                btnNo.style.top = (newCY - btnH / 2) + 'px';
+            }
+
+            // Desktop: cursor proximity
+            document.addEventListener('mousemove', function (e) {
+                const rect = btnNo.getBoundingClientRect();
+                const cx = rect.left + rect.width / 2;
+                const cy = rect.top + rect.height / 2;
+                const dist = Math.sqrt(Math.pow(e.clientX - cx, 2) + Math.pow(e.clientY - cy, 2));
+                if (dist < DODGE_DISTANCE) dodgeAwayFrom(e.clientX, e.clientY);
+            });
+
+            // Mobile: touch proximity
+            document.addEventListener('touchstart', function (e) {
+                const t = e.touches[0];
+                const rect = btnNo.getBoundingClientRect();
+                const cx = rect.left + rect.width / 2;
+                const cy = rect.top + rect.height / 2;
+                const dist = Math.sqrt(Math.pow(t.clientX - cx, 2) + Math.pow(t.clientY - cy, 2));
+                if (dist < DODGE_DISTANCE + 40) dodgeAwayFrom(t.clientX, t.clientY);
+            }, { passive: true });
+
+
+            // Direct click on NO button: dodge away from click position
+            btnNo.addEventListener('mouseenter', function (e) {
+                dodgeAwayFrom(e.clientX, e.clientY);
+            });
+            btnNo.addEventListener('click', function (e) {
+                e.preventDefault();
+                dodgeAwayFrom(e.clientX, e.clientY);
+            });
+        })();
+
+        // ===================================================================
+        // 4) SAY YES → Show the Love Letter
+        // ===================================================================
+        function sayYes() {
+            const scene1 = document.getElementById('scene1');
+            const scene2 = document.getElementById('scene2');
+            const btnNo = document.getElementById('btnNo');
+
+            // Hide proposal
+            scene1.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            scene1.style.opacity = '0';
+            scene1.style.transform = 'scale(0.95)';
+            btnNo.style.display = 'none';
+
+            setTimeout(() => {
+                scene1.style.display = 'none';
+                scene2.classList.remove('hidden');
+            }, 700);
+        }
+
+        // ===================================================================
+        // 5) FORGIVE → Show the Promises + Celebration
+        // ===================================================================
+        function showPromise() {
+            const scene2 = document.getElementById('scene2');
+            const scene3 = document.getElementById('scene3');
+
+            scene2.classList.add('hidden');
+            setTimeout(() => {
+                scene2.style.display = 'none';
+                scene3.classList.remove('hidden');
+
+                // Stagger promise list items
+                const items = document.querySelectorAll('#promiseList li');
+                items.forEach((item, i) => {
+                    item.style.animationDelay = (0.3 + i * 0.2) + 's';
+                });
+
+                // Celebrate! 🎉
+                launchConfetti();
+                launchCelebrationHearts();
+            }, 800);
+        }
+
+        // ===================================================================
+        // 6) CONFETTI 🎊
+        // ===================================================================
+        function launchConfetti() {
+            const colors = [
+                '#e94560', '#ff6b81', '#f8bbd0', '#fff176',
+                '#ffeb3b', '#ff5252', '#ff4081', '#ce93d8',
+                '#ba68c8', '#81d4fa', '#4fc3f7', '#a5d6a7',
+                '#fff', '#ffd54f'
+            ];
+
+            for (let i = 0; i < 100; i++) {
+                setTimeout(() => {
+                    const c = document.createElement('div');
+                    c.classList.add('confetti');
+                    c.style.left = Math.random() * 100 + '%';
+                    c.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    c.style.width = (6 + Math.random() * 10) + 'px';
+                    c.style.height = (6 + Math.random() * 10) + 'px';
+                    c.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+                    const dur = 2 + Math.random() * 3;
+                    c.style.animationDuration = dur + 's';
+                    document.body.appendChild(c);
+                    setTimeout(() => c.remove(), dur * 1000);
+                }, i * 35);
+            }
+
+            // Second wave
+            setTimeout(() => {
+                for (let i = 0; i < 50; i++) {
+                    setTimeout(() => {
+                        const c = document.createElement('div');
+                        c.classList.add('confetti');
+                        c.style.left = Math.random() * 100 + '%';
+                        c.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                        c.style.width = (6 + Math.random() * 10) + 'px';
+                        c.style.height = (6 + Math.random() * 10) + 'px';
+                        c.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+                        const dur = 2 + Math.random() * 3;
+                        c.style.animationDuration = dur + 's';
+                        document.body.appendChild(c);
+                        setTimeout(() => c.remove(), dur * 1000);
+                    }, i * 45);
+                }
+            }, 2500);
+        }
+
+        // ===================================================================
+        // 7) CELEBRATION HEARTS 💕
+        // ===================================================================
+        function launchCelebrationHearts() {
+            const hearts = ['❤️', '💕', '💖', '💗', '💘', '💝', '🥰', '😍', '🩷'];
+
+            for (let i = 0; i < 25; i++) {
+                setTimeout(() => {
+                    const h = document.createElement('span');
+                    h.classList.add('celebration-heart');
+                    h.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                    h.style.left = Math.random() * 100 + '%';
+                    h.style.bottom = '-30px';
+                    h.style.fontSize = (20 + Math.random() * 30) + 'px';
+                    const dur = 2 + Math.random() * 3;
+                    h.style.animationDuration = dur + 's';
+                    document.body.appendChild(h);
+                    setTimeout(() => h.remove(), dur * 1000);
+                }, i * 200);
+            }
+
+            // Ongoing hearts
+            setInterval(() => {
+                const h = document.createElement('span');
+                h.classList.add('celebration-heart');
+                h.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                h.style.left = Math.random() * 100 + '%';
+                h.style.bottom = '-30px';
+                h.style.fontSize = (20 + Math.random() * 30) + 'px';
+                const dur = 2 + Math.random() * 3;
+                h.style.animationDuration = dur + 's';
+                document.body.appendChild(h);
+                setTimeout(() => h.remove(), dur * 1000);
+            }, 600);
+        }
+    </script>
+</body>
+
+</html>
